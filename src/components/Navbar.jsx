@@ -25,11 +25,11 @@ export const Navbar = () => {
 
 
             <Link to='/browse/search'>
-              <button className='text-xs flex items-center gap-3 border border-black rounded-full p-3'><IoSearch/> Search</button>
+              <button className='text-xs flex items-center gap-3 border border-black rounded-full p-3'><IoSearch/><span className='hidden sm:block'>Search</span></button>
             </Link>
 
             <Link to='/'>
-              <h1 className='cursor-pointer'>TatTwamAsi.</h1>
+              <h1 className='cursor-pointer text-sm sm:text-2xl tracking-widest font-thin'>TheMovieLibrary.</h1>
             </Link>
 
             {user ? (

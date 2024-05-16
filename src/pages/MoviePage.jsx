@@ -85,7 +85,7 @@ export const MoviePage = () => {
             <div>
                 <h1 className='text-3xl'>{movie.title}</h1>
                 <h4>{movie.release_date}</h4>
-                <div className='flex gap-4'>
+                <div className='flex gap-4 overflow-scroll scrollbar-hide'>
                     {movie.genres?.map((genre) => (
                         <p className='' key={genre.id}>{genre.name}</p>
                     ))}
@@ -94,11 +94,11 @@ export const MoviePage = () => {
 
             <div className='flex items-center gap-4 pt-4'>
                 <p>Add To A list</p>
-                <div className='bg-black rounded-full font-bold p-5 cursor-pointer'>
+                <div className='bg-black rounded-full font-bold p-5 cursor-pointer text-white'>
                     <FaListUl />
                 </div>
                 <p>Or</p>
-                <div className='bg-black rounded-full p-5 cursor-pointer'>
+                <div className='bg-black rounded-full p-5 cursor-pointer text-white'>
                     {like ? 
                         <FaHeart onClick={() => handleDislike(movie.id)} className='' />
                     :

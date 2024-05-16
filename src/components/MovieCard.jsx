@@ -36,7 +36,7 @@ export const MovieCard = ({movie}) => {
 
   return (
     <div className='max-h-[calc(100vh/2)] w-full cursor-pointer rounded-xl relative shadow-black shadow-md'>
-        <div className='absolute rounded-tl-xl rounded-br-3xl bg-slate-900 opacity-80 p-5'>
+        <div className='absolute rounded-tl-xl rounded-br-3xl bg-slate-900 opacity-80 p-5 text-white'>
               {like ? 
                 <FaHeart onClick={() => handleDislike(movie.id)} className='' />
               :
