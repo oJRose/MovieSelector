@@ -34,7 +34,7 @@ export const MovieDBCard = ({movie}) => {
 
   return (
     <div className='min-h-[180px] cursor-pointer rounded-xl relative shadow-black shadow-lg'>
-        <div className='absolute rounded-tl-xl rounded-br-3xl bg-slate-900 opacity-70 hover:opacity-100 p-3'>
+        <div className='absolute rounded-tl-xl rounded-br-3xl bg-slate-900 opacity-70 text-white hover:opacity-100 p-3'>
                 <IoMdClose onClick={() => handleDislike(movie.id)} className='' />
         </div>
         <img className='rounded-xl h-full object-cover' src={`https://image.tmdb.org/t/p/original${movie.img}`} alt={movie.title} />

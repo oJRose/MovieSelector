@@ -5,7 +5,7 @@ import { HeadSlider } from '../components/HeadSlider'
 export const Home = () => {
   return (
     <>
-      <div className=''>
+      <div className='p-5'>
         <HeadSlider />
         <Main />
       </div>

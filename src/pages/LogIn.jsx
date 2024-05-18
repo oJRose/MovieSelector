@@ -22,23 +22,23 @@ export const LogIn = () => {
 
   return (
     <>
-        <div className='w-full h-[calc(100vh-85px)] flex justify-center items-center'>
-            <div className='w-[350px] h-[450px] bg-slate-500 rounded-xl'>
-                <div className='w-full  bg-black/70 h-full p-7 rounded-xl flex flex-col justify-between'>
+        <div className='w-full xl:h-[calc(100vh-85px)] flex justify-center items-center '>
+            <div className='sm:w-[350px] sm:h-[450px] bg-[#beb8ad30] rounded-xl shadow-[#969696] shadow-sm'>
+                <div className='w-full   h-full p-7 rounded-xl flex flex-col justify-between'>
 
-                    <h1 className=' text-2xl font-bold'>Log In</h1>
+                    <h1 className=' text-2xl mb-5'>Log In</h1>
                     <form onSubmit={handleSubmit} className='w-full flex flex-col gap-5'>
                         <input
                             onChange={(e) => setEmail(e.target.value)}
-                            className='p-2 rounded bg-gray-700 ' 
+                            className='p-2 rounded bg-[#535353] text-white' 
                             type="email" 
                             placeholder='Email' />
                         <input 
                             onChange={(e) => setPassword(e.target.value)}
-                            className='p-2 rounded bg-gray-700  ' 
+                            className='p-2 rounded bg-[#535353]  text-white' 
                             type="password" 
                             placeholder='Password'/>
-                        <button className='w-full text-gray-700 bg-gray-300 rounded p-2'>Log In</button>
+                        <button className='w-full text-gray-700 bg-[#c6c6c6] rounded p-2 shadow-[#969696] shadow-sm'>Log In</button>
                     </form>
 
                     <div>
@@ -49,7 +49,7 @@ export const LogIn = () => {
 
                         <div className='flex gap-2'>
                             <p>New in here?</p>
-                            <Link to='/signup'>
+                            <Link className='underline' to='/signup'>
                                 Sign Up
                             </Link>
                         </div>

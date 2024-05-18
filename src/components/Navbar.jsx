@@ -20,7 +20,7 @@ export const Navbar = () => {
 
   return (
     <>
-        <header className='my-10 w-full h-[85px] flex justify-between items-center p-3 sm:p-5 border-black border-y-2 relative z-40'>
+        <header className=' my-5 sm:my-10 mx-auto w-full h-[85px] flex justify-between items-center p-3 sm:p-5 border-black border-y-2 relative z-40'>
 
 
 

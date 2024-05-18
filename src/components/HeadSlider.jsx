@@ -25,9 +25,9 @@ export const HeadSlider = () => {
 
   return (
     <>
-        <div className='w-full h-full border border-black p-2 sm:p-7 relative'>
-            <div className='bg-old-yellow absolute top-[-35px] left-[30px] p-4 '>
-                <h1 className='text-2xl'>Soon in Movie Theatres</h1>
+        <div className='w-full h-full border border-black p-7 relative'>
+            <div className='bg-[#e4ddcf] absolute top-[-30px] sm:top-[-35px] left-[30px] p-4 '>
+                <h1 className='sm:text-2xl'>Soon in Movie Theatres</h1>
             </div>
             <div className='w-full h-[calc(100vh-250px)]  flex overflow-x-scroll scroll-smooth snap-x snap-mandatory whitespace-nowrap gap-7 relative rounded-xl shadow-black shadow-md'>
                 {movies.map((movie, id) => (
